@@ -26,15 +26,24 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
          ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('globe', 'http://izabelacborges.com'),
+         ('twitter', 'https://twitter.com/belacb_'),
+	 ('linkedin', 'https://br.linkedin.com/in/izabelacborges'),
+	 ('github', 'https://github.com/izabelacborges'),)
 
 DEFAULT_PAGINATION = 20
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
+THEME = '/Users/belacb/pelican-themes/hyde'
+
+BIO = "A Data Scientist wannabe, AI enthusiast that likes to discuss it's ethics, front-ender by fun, bookworm, yogini and painter on the free hours."
+PROFILE_IMAGE = 'avatar.jpg'
+
+DISQUS_SITENAME = 'izabelacborges-com-blog'
+
 MARKUP = ('md', 'ipynb')
 
-PLUGIN_PATH = './plugins'
+PLUGIN_PATHS = ['./plugins']
 PLUGINS = ['ipynb.markup']
