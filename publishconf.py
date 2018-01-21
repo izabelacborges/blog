@@ -52,7 +52,7 @@ BIO = "A Data Scientist wannabe, AI enthusiast that likes to discuss it's ethics
 PROFILE_IMAGE = 'avatar.jpg'
 
 DISQUS_SITENAME = 'izabelacborges-com-blog'
-GOOGLE_ANALYTICS = ''
+GOOGLE_ANALYTICS = 'UA-112810738-1'
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
