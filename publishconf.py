@@ -51,6 +51,11 @@ THEME = '/Users/belacb/pelican-themes/hyde'
 BIO = "A Data Scientist wannabe, AI enthusiast that likes to discuss it's ethics, front-ender by fun, bookworm, yogini and painter on the free hours."
 PROFILE_IMAGE = 'avatar.jpg'
 
+MARKUP = ('md', 'ipynb')
+
+PLUGIN_PATHS = ['./plugins']
+PLUGINS = ['ipynb.markup']
+
 DISQUS_SITENAME = 'izabelacborges-com-blog'
 GOOGLE_ANALYTICS = 'UA-112810738-1'
 
