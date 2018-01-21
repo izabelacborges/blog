@@ -66,8 +66,8 @@
 	</div>
 </div>		<div class="content container">
 <div class="post">
-	<h1 class="post-title">print('Oi você aí!')</h1>
-	<span class="post-date">Fri 12 January 2018</span>
+	<h1 class="post-title">Instalando o Python 3 com virtualenv</h1>
+	<span class="post-date">Sun 21 January 2018</span>
 	<style type="text/css">/*!
 *
 * IPython notebook
@@ -1044,9 +1044,200 @@ h6:hover .anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Isso aqui é o <code>print('Hello world!')</code> dos posts desse blog. 😄</p>
-<p>A ideia aqui é fazer uma série de tutoriais de python básico, conceitos de data science, e python para data science de um jeito em que dê pra melhorar a qualidade e aumentar a quantidade de materiais desse assunto disponíveis em português.</p>
-<p>Então é isso aí, e até mais! 🤘🏽</p>
+<p>Oi gente!</p>
+<p>Tem alguns meses que eu tenho procrastinado na tarefa de fazer um tutorial de instalação e configuração do Python que funcione, depois de ter usado o Python em tantos ambientes diferentes. Com esse blog alguns amigos cobraram isso e aqui estamos nós!</p>
+<p><strong>Obs1:</strong> Começo já dizendo que essa não é a única forma de configurar seu ambiente para desenvolvimento Python, e possivelmente também não é a melhor... mas foi a mais útil e fácil pra mim, e talvez isso seja verdade pra você que está lendo também 😊</p>
+<p><strong>Obs2:</strong> Esse tutorial vai ser testado em ambientes Unix <em>(Linux e Mac OS X)</em>, mas eu não tenho como fazê-lo para ambientes Windows. <em>(Inclusive, aconselho fortemente não desenvolver qualquer coisa além de .NET em Windows).</em> Mas cada um com suas escolhas e suas preferências 🤷 se você quiser desenvolver em Python no Windows eu aconselho usar o <a href="https://www.anaconda.com/download/#windows">Anaconda</a> ou o <a href="https://conda.io/miniconda.html">Miniconda</a> ao invés deste tutorial.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Agora-é-a-hora-da-verdade!">Agora é a hora da verdade!<a class="anchor-link" href="#Agora-é-a-hora-da-verdade!">¶</a></h2><p>Em ambientes Unix o Python geralmente vem pré-instalado, mas isso não é exatamente uma notícia tão boa assim. A maioria das distribuições vem com o Python 2.7 e em todos os tutoriais aqui nós iremos usar o Python 3.6 (versão atual no momento dessa publicação).</p>
+<p>A não ser que você tenha que trabalhar em um projeto que utilize outras versões (como o Python 2.7, 2.5, 3.4 ou 3.5 por exemplo) não será necessário a instalação de outra versão. Lembrando que as versões Python 2.x irão perder suporte oriundo da Python Software Foundation em 2020.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Instalação-do-Python">Instalação do Python<a class="anchor-link" href="#Instalação-do-Python">¶</a></h2><p>A primeira coisa a fazer é abrir o seu terminal e testar a versão do Python presente no seu computador.</p>
+<div class="highlight"><pre><span></span>$ python -V
+
+$ python3 -V
+</pre></div>
+<p>O primeiro comando vai te dar a versão do interpretador padrão python instalado, e o segundo comando vai te dar a versão do interpretador python3 instalado.</p>
+<p><sup>1.</sup> As saídas do terminal podem ser as mesmas para os dois comandos ou não.<br />
+<sup>2.</sup> Caso você já tenha a versão 3.6 instalada, você pode pular essa parte do tutorial e ir para a instalação do <code>pip</code>.</p>
+<p>Para a instalação no Linux você irá executar um dos comandos abaixo:</p>
+<div class="highlight"><pre><span></span><span class="c1"># Ubuntu 16.10 ou mais novos</span>
+$ sudo apt-get update
+$ sudo apt-get install python3.6
+
+<span class="c1"># Versões mais antigas do Ubuntu</span>
+$ sudo apt-get install software-properties-common
+$ sudo add-apt-repository ppa:deadsnakes/ppa
+$ sudo apt-get update
+$ sudo apt-get install python3.6
+
+<span class="c1"># Fedora</span>
+$ sudo dnf install python3
+
+<span class="c1"># Arch Linux</span>
+$ pacman -S python
+</pre></div>
+<p>Para a instalação no Mac OS você irá executar um ou mais dos seguintes comandos de acordo com o que você já tem instalado:</p>
+<div class="highlight"><pre><span></span><span class="c1"># Instalação do GCC pelo XCode</span>
+$ xcode-select --install
+
+<span class="c1"># Instalação do Homebrew</span>
+$ ruby -e <span class="s2">"</span><span class="k">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install<span class="k">)</span><span class="s2">"</span>
+
+<span class="c1"># Instalação do Python</span>
+$ brew install python3
+</pre></div>
+<p>Ao final da instalação execute novamente os comandos de verificação de versão:</p>
+<div class="highlight"><pre><span></span>$ python -V
+
+$ python3 -V
+</pre></div>
+<p>Se a versão 3.6 não aparece na saída da execução de nenhum desses comandos, talvez seja necessário mudar o alias do seu interpretador no seu arquivo <code>.bashrc</code> ou <code>.bash_aliases</code>.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Obs.</strong>: Alguns pacotes carregam o interpretador C Python (executam um cabeçalho <code>#include <python.h></code>), e você não vai conseguir instalá-los em distribuições Linux à menos que tenha a versão desenvolvedor do Python. No Mac OS os cabeçalhos já são carregados, então não existe a necessidade da versão <code>-dev</code>.</p>
+<h2 id="Instalando-python-dev">Instalando python-dev<a class="anchor-link" href="#Instalando-python-dev">¶</a></h2><p>De acordo com a sua distribuição do Linux, você deve usar os mesmos comandos usados acima para a instalação do interpretador do python, trocando <code>python</code> pela variante correspondente. É aconselhável que você instale o python-dev para todas as versões do python as quais você pretende usar/tem na sua máquina.</p>
+<div class="highlight"><pre><span></span><span class="c1"># Ubuntu 16.10 ou mais novos</span>
+$ sudo apt-get update
+$ sudo apt-get install python-dev python3-dev python3.6-dev
+
+<span class="c1"># Versões mais antigas do Ubuntu</span>
+$ sudo apt-get update
+$ sudo apt-get install python-dev python3-dev python3.6-dev
+
+<span class="c1"># Fedora</span>
+<span class="c1"># Caso não funcione utilizando o dnf, você pode instalar utilizando o mesmo comando para Ubuntu 16.10</span>
+$ sudo dnf install python-devel python3-devel
+
+<span class="c1"># Arch Linux</span>
+$ pacman -S base-devel
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Instalando-o-pip">Instalando o pip<a class="anchor-link" href="#Instalando-o-pip">¶</a></h2><p>Algumas distribuições do Linux instalam o pip durante a instação do Python, e o mesmo acontece no Mac OS utilizando o Homebrew, então você pode checar sua versão do pip com:</p>
+<div class="highlight"><pre><span></span>$  pip -V
+</pre></div>
+<p>Caso o comando <code>pip</code> não exista você deverá instalá-lo seguindo os passos abaixo.
+Para instalar o pip da maneira mais segura e à prova de falhas, você vai salvar <a href="https://bootstrap.pypa.io/get-pip.py">esse</a> arquivo de texto na raiz da sua máquina.</p>
+<p>Para fazer isso é só clicar com o botão direito em qualquer lugar da página e selecionar <code>Salvar como...</code> ou <code>Save as...</code>. O nome do arquivo será <code>get-pip.py</code>.</p>
+<p>Nós iremos instalar o pip utilizando a versão do python que pretendemos usar:</p>
+<div class="highlight"><pre><span></span>$  python3.6 get-pip.py
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Instalando-e-criando-diversos-ambientes-virtuais-com-virtualenv">Instalando e criando diversos ambientes virtuais com virtualenv<a class="anchor-link" href="#Instalando-e-criando-diversos-ambientes-virtuais-com-virtualenv">¶</a></h2><p>Para diminuir a chance de confusão entre versões do Python eu utilizo ambientes virtuais.</p>
+<p>Bem, ambientes virtuais se resumem à lugares reservados à apenas determinada versão do Python. Eu posso fazer um ambiente para usar só o python 2.7, um ambiente apenas para o 3.6, e além disso eu posso ter ambientes específicos por tipo de projeto ou por projeto, para não haver uma sobrecarga de pacotes em determinado ambiente.</p>
+<p>Por exemplo, eu tenho um ambiente apenas para projetos web, eu tenho um ambiente geral para utilizar o python usualmente (exercícios e trabalhos de faculdade), e tenho um ambiente específico para projetos de data science. Você pode separar os seus ambientes da forma que mais lhe convir. 👍🏽</p>
+<h3 id="Instalando-o-pacote-virtualenv">Instalando o pacote virtualenv<a class="anchor-link" href="#Instalando-o-pacote-virtualenv">¶</a></h3><p>Para instalar o virtualenv nós vamos utilizar o <code>pip</code>, o instalador de pacotes que instalamos ali em cima.</p>
+<div class="highlight"><pre><span></span>$ pip3 install virtualenv
+
+<span class="c1"># Conferir a instalação</span>
+$ virtualenv --version
+</pre></div>
+<p>Porém, agora que você tem a possibilidade de criar diversos ambientes, você tem que saber controlar os pacotes que você instala dentro desses ambientes e fora deles. Para diminuir a chance de fazer besteiras, eu optei por delimitar o alcance do meu comando <code>pip</code> fazendo com que eu só pudesse instalar e remover pacotes se um virtualenv estivesse ativado. E para eventuais eventualidades (você viu o que eu fiz aqui?! 😏😎) eu criei um alias para um global pip que pode instalar fora dos ambientes. (Sendo que esse poder só deve ser usado em ocasiões especiais.)</p>
+<p>Cabe à você decidir se irá ou não usar a sua máquina assim, mas eu vou colocar esses passos aqui anyway!</p>
+<h3 id="Delimitando-o-pip-aos-virtualenvs">Delimitando o pip aos virtualenvs<a class="anchor-link" href="#Delimitando-o-pip-aos-virtualenvs">¶</a></h3><p>Para isso vamos criar um diretório de projetos, um diretório de virtualenvs e um diretório de configuração do pip com um arquivo de configuração:</p>
+<div class="highlight"><pre><span></span><span class="c1"># Criando as pastas de projetos e virtualenv</span>
+$ mkdir -p ~/Projetos ~/Virtualenvs 
+
+<span class="c1"># Criando a pasta de configuração do pip no Mac OS</span>
+$ mkdir ~/Library/Application<span class="se">\ </span>Support/pip
+
+<span class="c1"># Criando a pasta de configuração do pip no Linux</span>
+$ mkdir ~/.config/pip
+
+<span class="c1"># Criando o arquivo no Mac OS</span>
+$ vim ~/Library/Application<span class="se">\ </span>Support/pip/pip.conf
+
+<span class="c1"># Criando o arquivo de configuração no Linux</span>
+$ vim ~/.config/pip/pip.conf
+</pre></div>
+<p>Dentro do arquivo de configuração que você abriu utilizando o <code>vim</code>, você irá incluir as seguintes linhas:</p>
+<div class="highlight"><pre><span></span><span class="o">[</span>install<span class="o">]</span>
+require-virtualenv <span class="o">=</span> <span class="nb">true</span>
+
+<span class="o">[</span>uninstall<span class="o">]</span>
+require-virtualenv <span class="o">=</span> <span class="nb">true</span>
+</pre></div>
+<p>Você pode salvar e fechar o arquivo (<code>[esc] + :wq + [Enter]</code>), e estas configurações já estarão sendo obedecidas.</p>
+<h3 id="Criando-virtualenvs">Criando virtualenvs<a class="anchor-link" href="#Criando-virtualenvs">¶</a></h3><p>Para criar um ambiente virtual você simplesmente executa o comando</p>
+<div class="highlight"><pre><span></span>$ virtualenv nome-do-ambiente
+</pre></div>
+<p>porém, caso você tenha tanto o python 2.x quanto o python 3.x na sua máquina, é preciso alterar o comando para criar um ambiente em python 3.x:</p>
+<div class="highlight"><pre><span></span>$ virtualenv -p python3 nome-do-ambiente
+</pre></div>
+<h3 id="Criando-o-alias-globalpip">Criando o alias globalpip<a class="anchor-link" href="#Criando-o-alias-globalpip">¶</a></h3><p>Para criar o globalpip e ser feliz com a possibilidade de instalar e atualizar pacotes sem estar em um ambiente virtual nós vamos editar o arquivo <code>.bashrc</code>. É só copiar o código e colar no fim do arquivo.</p>
+<div class="highlight"><pre><span></span>globalpip<span class="o">(){</span>
+   <span class="nv">PIP_REQUIRE_VIRTUALENV</span><span class="o">=</span><span class="s2">""</span> pip <span class="s2">"</span><span class="nv">$@</span><span class="s2">"</span>
+<span class="o">}</span>
+
+globalpip3<span class="o">(){</span>
+   <span class="nv">PIP_REQUIRE_VIRTUALENV</span><span class="o">=</span><span class="s2">""</span> pip3 <span class="s2">"</span><span class="nv">$@</span><span class="s2">"</span>
+<span class="o">}</span>
+</pre></div>
+<p>E aí você só precisa utilizar o comando assim:</p>
+<div class="highlight"><pre><span></span>$ globalpip3 install --upgrade pip setuptools wheel virtualenv
+</pre></div>
+<h3 id="Ativando-e-desativando-ambientes">Ativando e desativando ambientes<a class="anchor-link" href="#Ativando-e-desativando-ambientes">¶</a></h3><p>Para ativar um determinado ambiente você precisa executar:</p>
+<div class="highlight"><pre><span></span>$ <span class="nb">source</span> ~/Virtualenvs/nome-do-ambiente/bin/activate
+</pre></div>
+<p>E para desativar:</p>
+<div class="highlight"><pre><span></span>$ deactivate
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Bônus:-autoenv">Bônus: autoenv<a class="anchor-link" href="#Bônus:-autoenv">¶</a></h2><p>O autoenv ativa automaticamente um ambiente virtual sempre que você entra (comando <code>cd</code>) em um diretório que contém um arquivo oculto <code>.env</code>.</p>
+<p>Para instalá-lo no Linux:</p>
+<div class="highlight"><pre><span></span>$ git clone git://github.com/kennethreitz/autoenv.git ~/.autoenv
+$ <span class="nb">echo</span> <span class="s1">'source ~/.autoenv/activate.sh'</span> >> ~/.bashrc
+</pre></div>
+<p>Para instalá-lo no Mac OS X:</p>
+<div class="highlight"><pre><span></span>$ brew install autoenv
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>E é isso aí gente! Esse artigo é praticamente uma compilação <a href="http://docs.python-guide.org/en/latest/starting/install3/osx/">desse</a>, <a href="http://docs.python-guide.org/en/latest/dev/virtualenvs/#virtualenvironments-ref">desse</a> e <a href="https://hackercodex.com/guide/python-development-environment-on-mac-osx/">desse</a> artigo, e de mais 80 perguntas no stackoverflow, asklinux e python.org.</p>
+<p><strong>Obs.1</strong>: Caso algo não tenha funcionado é só comentar aí que eu tento te ajudar o mais rápido possível!</p>
+<p><strong>Obs.2</strong>: Se você achou algum erro, comenta aí que eu corrijo ASAP 👍🏽</p>
+<p><strong>Obs.3</strong>: Se você gostou, let me know, e comente algo que você queira ver aqui, farei o possível pra escrever sobre o que for do interesse de todos 😊</p>
+<p>Tchau, migos!</p>
 </div>
 </div>
 </div>
