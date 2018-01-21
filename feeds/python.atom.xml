@@ -1,74 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<link href="http://gmpg.org/xfn/11" rel="profile">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta http-equiv="content-type" content="text/html; charset=utf-8">
-
-		<!-- Enable responsiveness on mobile devices-->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-
-		<title>the worthless data science blog ever</title>
-
-		<!-- CSS -->
-		<link href="//fonts.googleapis.com/" rel="dns-prefetch">
-		<link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Abril+Fatface|Source+Sans+Pro:400,400italic,700&amp;subset=latin,latin-ext" rel="stylesheet">
-
-		<link rel="stylesheet" href="http://izabelacborges.com/blog/theme/css/poole.css" />
-		<link rel="stylesheet" href="http://izabelacborges.com/blog/theme/css/hyde.css" />
-		<link rel="stylesheet" href="http://izabelacborges.com/blog/theme/css/syntax.css" />
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
-		<!-- RSS -->
-		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
-	<script type="text/javascript">
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
- 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
- 			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
- 			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-			ga('create', 'UA-112810738-1', 'auto');
-			ga('send', 'pageview');
-	</script>
-	</head>
-
-	<body class="theme-base-0d">
-<div class="sidebar">
-	<div class="container sidebar-sticky">
-		<div class="sidebar-about">
-
-			<h1>
-				<a href="/blog">
-					<img class="profile-picture" src="http://izabelacborges.com/blog/images/avatar.jpg">
-					the worthless data science blog ever
-				</a>
-			</h1>
-			<p class="lead"></p>
-			<p class="lead">A Data Scientist wannabe, AI enthusiast that likes to discuss it's ethics, front-ender by fun, bookworm, yogini and painter on the free hours. </p>
-			<p></p>
-		</div>
-		<nav class="sidebar-nav">
-			<a class="sidebar-nav-item" href="http://izabelacborges.com">
-				<i class="fa fa-globe"></i>
-			</a>
-			<a class="sidebar-nav-item" href="https://twitter.com/belacb_">
-				<i class="fa fa-twitter"></i>
-			</a>
-			<a class="sidebar-nav-item" href="https://br.linkedin.com/in/izabelacborges">
-				<i class="fa fa-linkedin"></i>
-			</a>
-			<a class="sidebar-nav-item" href="https://github.com/izabelacborges">
-				<i class="fa fa-github"></i>
-			</a>
-			<a class="sidebar-nav-item" href="">
-				<i class="fa fa-feed"></i>
-			</a>
-		</nav>
-	</div>
-</div>		<div class="content container">
-<div class="post">
-	<h1 class="post-title">print('Oi você aí!')</h1>
-	<span class="post-date">Fri 12 January 2018</span>
-	<style type="text/css">/*!
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>the worthless data science blog ever - python</title><link href="http://izabelacborges.com/blog/" rel="alternate"></link><link href="http://izabelacborges.com/blog/feeds/python.atom.xml" rel="self"></link><id>http://izabelacborges.com/blog/</id><updated>2018-01-21T14:02:00-02:00</updated><entry><title>Instalando o Python 3 com virtualenv</title><link href="http://izabelacborges.com/blog/install-python-the-right-way.html" rel="alternate"></link><published>2018-01-21T14:02:00-02:00</published><updated>2018-01-21T14:02:00-02:00</updated><author><name>Izabela Borges</name></author><id>tag:izabelacborges.com,2018-01-21:/blog/install-python-the-right-way.html</id><summary type="html">
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;Oi gente!&lt;/p&gt;
+&lt;p&gt;Tem alguns meses que eu tenho procrastinado na tarefa de fazer um tutorial de instalação e configuração do Python que funcione, depois de ter usado o Python em tantos ambientes diferentes. Com esse blog alguns amigos cobraram isso e aqui estamos nós!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Obs1:&lt;/strong&gt; Começo já dizendo que essa não é a única forma de configurar seu ambiente para desenvolvimento Python, e possivelmente também não é a melhor... mas foi a mais útil e fácil pra mim, e talvez isso seja verdade pra você que está lendo também 😊&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
 *
 * IPython notebook
 *
@@ -295,7 +233,7 @@ div.unrecognized_cell .inner_cell a:hover {
   text-decoration: none;
 }
 @media (max-width: 540px) {
-  div.unrecognized_cell > div.prompt {
+  div.unrecognized_cell &gt; div.prompt {
     display: none;
   }
 }
@@ -348,19 +286,19 @@ div.input_prompt {
   color: #303F9F;
   border-top: 1px solid transparent;
 }
-div.input_area > div.highlight {
+div.input_area &gt; div.highlight {
   margin: 0.4em;
   border: none;
   padding: 0px;
   background-color: transparent;
 }
-div.input_area > div.highlight > pre {
+div.input_area &gt; div.highlight &gt; pre {
   margin: 0px;
   border: none;
   padding: 0px;
   background-color: transparent;
 }
-/* The following gets added to the <head> if it is detected that the user has a
+/* The following gets added to the &lt;head&gt; if it is detected that the user has a
  * monospace font with inconsistent normal/bold/italic height.  See
  * notebookmain.js.  Such fonts will have keywords vertically offset with
  * respect to the rest of the text.  The user should select a better font.
@@ -406,7 +344,7 @@ div.input_area > div.highlight > pre {
 }
 /*
 
-Original style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Org>
+Original style from softwaremaniacs.org (c) Ivan Sagalaev &lt;Maniac@SoftwareManiacs.Org&gt;
 Adapted from GitHub theme
 
 */
@@ -868,7 +806,7 @@ div.text_cell {
   align-items: stretch;
 }
 @media (max-width: 540px) {
-  div.text_cell > div.prompt {
+  div.text_cell &gt; div.prompt {
     display: none;
   }
 }
@@ -933,8 +871,8 @@ h6:hover .anchor-link {
   font-size: 100%;
   font-style: italic;
 }
-</style>
-<style type="text/css">.highlight .hll { background-color: #ffffcc }
+&lt;/style&gt;
+&lt;style type="text/css"&gt;.highlight .hll { background-color: #ffffcc }
 .highlight  { background: #f8f8f8; }
 .highlight .c { color: #408080; font-style: italic } /* Comment */
 .highlight .err { border: 1px solid #FF0000 } /* Error */
@@ -1002,8 +940,8 @@ h6:hover .anchor-link {
 .highlight .vg { color: #19177C } /* Name.Variable.Global */
 .highlight .vi { color: #19177C } /* Name.Variable.Instance */
 .highlight .vm { color: #19177C } /* Name.Variable.Magic */
-.highlight .il { color: #666666 } /* Literal.Number.Integer.Long */</style>
-<style type="text/css">
+.highlight .il { color: #666666 } /* Literal.Number.Integer.Long */&lt;/style&gt;
+&lt;style type="text/css"&gt;
 /* Temporary definitions which will become obsolete with Notebook release 5.0 */
 .ansi-black-fg { color: #3E424D; }
 .ansi-black-bg { background-color: #3E424D; }
@@ -1039,19 +977,210 @@ h6:hover .anchor-link {
 .ansi-white-intense-bg { background-color: #A1A6B2; }
 
 .ansi-bold { font-weight: bold; }
-</style>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Isso aqui é o <code>print('Hello world!')</code> dos posts desse blog. 😄</p>
-<p>A ideia aqui é fazer uma série de tutoriais de python básico, conceitos de data science, e python para data science de um jeito em que dê pra melhorar a qualidade e aumentar a quantidade de materiais desse assunto disponíveis em português.</p>
-<p>Então é isso aí, e até mais! 🤘🏽</p>
-</div>
-</div>
-</div>
+&lt;/style&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;Oi gente!&lt;/p&gt;
+&lt;p&gt;Tem alguns meses que eu tenho procrastinado na tarefa de fazer um tutorial de instalação e configuração do Python que funcione, depois de ter usado o Python em tantos ambientes diferentes. Com esse blog alguns amigos cobraram isso e aqui estamos nós!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Obs1:&lt;/strong&gt; Começo já dizendo que essa não é a única forma de configurar seu ambiente para desenvolvimento Python, e possivelmente também não é a melhor... mas foi a mais útil e fácil pra mim, e talvez isso seja verdade pra você que está lendo também 😊&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Obs2:&lt;/strong&gt; Esse tutorial vai ser testado em ambientes Unix &lt;em&gt;(Linux e Mac OS X)&lt;/em&gt;, mas eu não tenho como fazê-lo para ambientes Windows. &lt;em&gt;(Inclusive, aconselho fortemente não desenvolver qualquer coisa além de .NET em Windows).&lt;/em&gt; Mas cada um com suas escolhas e suas preferências 🤷 se você quiser desenvolver em Python no Windows eu aconselho usar o &lt;a href="https://www.anaconda.com/download/#windows"&gt;Anaconda&lt;/a&gt; ou o &lt;a href="https://conda.io/miniconda.html"&gt;Miniconda&lt;/a&gt; ao invés deste tutorial.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h2 id="Agora-é-a-hora-da-verdade!"&gt;Agora é a hora da verdade!&lt;a class="anchor-link" href="#Agora-é-a-hora-da-verdade!"&gt;¶&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Em ambientes Unix o Python geralmente vem pré-instalado, mas isso não é exatamente uma notícia tão boa assim. A maioria das distribuições vem com o Python 2.7 e em todos os tutoriais aqui nós iremos usar o Python 3.6 (versão atual no momento dessa publicação).&lt;/p&gt;
+&lt;p&gt;A não ser que você tenha que trabalhar em um projeto que utilize outras versões (como o Python 2.7, 2.5, 3.4 ou 3.5 por exemplo) não será necessário a instalação de outra versão. Lembrando que as versões Python 2.x irão perder suporte oriundo da Python Software Foundation em 2020.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h2 id="Instalação-do-Python"&gt;Instalação do Python&lt;a class="anchor-link" href="#Instalação-do-Python"&gt;¶&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;A primeira coisa a fazer é abrir o seu terminal e testar a versão do Python presente no seu computador.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ python -V
 
-<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+$ python3 -V
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;O primeiro comando vai te dar a versão do interpretador padrão python instalado, e o segundo comando vai te dar a versão do interpretador python3 instalado.&lt;/p&gt;
+&lt;p&gt;&lt;sup&gt;1.&lt;/sup&gt; As saídas do terminal podem ser as mesmas para os dois comandos ou não.&lt;br /&gt;
+&lt;sup&gt;2.&lt;/sup&gt; Caso você já tenha a versão 3.6 instalada, você pode pular essa parte do tutorial e ir para a instalação do &lt;code&gt;pip&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para a instalação no Linux você irá executar um dos comandos abaixo:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Ubuntu 16.10 ou mais novos&lt;/span&gt;
+$ sudo apt-get update
+$ sudo apt-get install python3.6
+
+&lt;span class="c1"&gt;# Versões mais antigas do Ubuntu&lt;/span&gt;
+$ sudo apt-get install software-properties-common
+$ sudo add-apt-repository ppa:deadsnakes/ppa
+$ sudo apt-get update
+$ sudo apt-get install python3.6
+
+&lt;span class="c1"&gt;# Fedora&lt;/span&gt;
+$ sudo dnf install python3
+
+&lt;span class="c1"&gt;# Arch Linux&lt;/span&gt;
+$ pacman -S python
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Para a instalação no Mac OS você irá executar um ou mais dos seguintes comandos de acordo com o que você já tem instalado:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Instalação do GCC pelo XCode&lt;/span&gt;
+$ xcode-select --install
+
+&lt;span class="c1"&gt;# Instalação do Homebrew&lt;/span&gt;
+$ ruby -e &lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install&lt;span class="k"&gt;)&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Instalação do Python&lt;/span&gt;
+$ brew install python3
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Ao final da instalação execute novamente os comandos de verificação de versão:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ python -V
+
+$ python3 -V
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Se a versão 3.6 não aparece na saída da execução de nenhum desses comandos, talvez seja necessário mudar o alias do seu interpretador no seu arquivo &lt;code&gt;.bashrc&lt;/code&gt; ou &lt;code&gt;.bash_aliases&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;&lt;strong&gt;Obs.&lt;/strong&gt;: Alguns pacotes carregam o interpretador C Python (executam um cabeçalho &lt;code&gt;#include &lt;python.h&gt;&lt;/code&gt;), e você não vai conseguir instalá-los em distribuições Linux à menos que tenha a versão desenvolvedor do Python. No Mac OS os cabeçalhos já são carregados, então não existe a necessidade da versão &lt;code&gt;-dev&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id="Instalando-python-dev"&gt;Instalando python-dev&lt;a class="anchor-link" href="#Instalando-python-dev"&gt;¶&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;De acordo com a sua distribuição do Linux, você deve usar os mesmos comandos usados acima para a instalação do interpretador do python, trocando &lt;code&gt;python&lt;/code&gt; pela variante correspondente. É aconselhável que você instale o python-dev para todas as versões do python as quais você pretende usar/tem na sua máquina.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Ubuntu 16.10 ou mais novos&lt;/span&gt;
+$ sudo apt-get update
+$ sudo apt-get install python-dev python3-dev python3.6-dev
+
+&lt;span class="c1"&gt;# Versões mais antigas do Ubuntu&lt;/span&gt;
+$ sudo apt-get update
+$ sudo apt-get install python-dev python3-dev python3.6-dev
+
+&lt;span class="c1"&gt;# Fedora&lt;/span&gt;
+&lt;span class="c1"&gt;# Caso não funcione utilizando o dnf, você pode instalar utilizando o mesmo comando para Ubuntu 16.10&lt;/span&gt;
+$ sudo dnf install python-devel python3-devel
+
+&lt;span class="c1"&gt;# Arch Linux&lt;/span&gt;
+$ pacman -S base-devel
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h2 id="Instalando-o-pip"&gt;Instalando o pip&lt;a class="anchor-link" href="#Instalando-o-pip"&gt;¶&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Algumas distribuições do Linux instalam o pip durante a instação do Python, e o mesmo acontece no Mac OS utilizando o Homebrew, então você pode checar sua versão do pip com:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$  pip -V
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Caso o comando &lt;code&gt;pip&lt;/code&gt; não exista você deverá instalá-lo seguindo os passos abaixo.
+Para instalar o pip da maneira mais segura e à prova de falhas, você vai salvar &lt;a href="https://bootstrap.pypa.io/get-pip.py"&gt;esse&lt;/a&gt; arquivo de texto na raiz da sua máquina.&lt;/p&gt;
+&lt;p&gt;Para fazer isso é só clicar com o botão direito em qualquer lugar da página e selecionar &lt;code&gt;Salvar como...&lt;/code&gt; ou &lt;code&gt;Save as...&lt;/code&gt;. O nome do arquivo será &lt;code&gt;get-pip.py&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Nós iremos instalar o pip utilizando a versão do python que pretendemos usar:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$  python3.6 get-pip.py
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h2 id="Instalando-e-criando-diversos-ambientes-virtuais-com-virtualenv"&gt;Instalando e criando diversos ambientes virtuais com virtualenv&lt;a class="anchor-link" href="#Instalando-e-criando-diversos-ambientes-virtuais-com-virtualenv"&gt;¶&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Para diminuir a chance de confusão entre versões do Python eu utilizo ambientes virtuais.&lt;/p&gt;
+&lt;p&gt;Bem, ambientes virtuais se resumem à lugares reservados à apenas determinada versão do Python. Eu posso fazer um ambiente para usar só o python 2.7, um ambiente apenas para o 3.6, e além disso eu posso ter ambientes específicos por tipo de projeto ou por projeto, para não haver uma sobrecarga de pacotes em determinado ambiente.&lt;/p&gt;
+&lt;p&gt;Por exemplo, eu tenho um ambiente apenas para projetos web, eu tenho um ambiente geral para utilizar o python usualmente (exercícios e trabalhos de faculdade), e tenho um ambiente específico para projetos de data science. Você pode separar os seus ambientes da forma que mais lhe convir. 👍🏽&lt;/p&gt;
+&lt;h3 id="Instalando-o-pacote-virtualenv"&gt;Instalando o pacote virtualenv&lt;a class="anchor-link" href="#Instalando-o-pacote-virtualenv"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Para instalar o virtualenv nós vamos utilizar o &lt;code&gt;pip&lt;/code&gt;, o instalador de pacotes que instalamos ali em cima.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ pip3 install virtualenv
+
+&lt;span class="c1"&gt;# Conferir a instalação&lt;/span&gt;
+$ virtualenv --version
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Porém, agora que você tem a possibilidade de criar diversos ambientes, você tem que saber controlar os pacotes que você instala dentro desses ambientes e fora deles. Para diminuir a chance de fazer besteiras, eu optei por delimitar o alcance do meu comando &lt;code&gt;pip&lt;/code&gt; fazendo com que eu só pudesse instalar e remover pacotes se um virtualenv estivesse ativado. E para eventuais eventualidades (você viu o que eu fiz aqui?! 😏😎) eu criei um alias para um global pip que pode instalar fora dos ambientes. (Sendo que esse poder só deve ser usado em ocasiões especiais.)&lt;/p&gt;
+&lt;p&gt;Cabe à você decidir se irá ou não usar a sua máquina assim, mas eu vou colocar esses passos aqui anyway!&lt;/p&gt;
+&lt;h3 id="Delimitando-o-pip-aos-virtualenvs"&gt;Delimitando o pip aos virtualenvs&lt;a class="anchor-link" href="#Delimitando-o-pip-aos-virtualenvs"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Para isso vamos criar um diretório de projetos, um diretório de virtualenvs e um diretório de configuração do pip com um arquivo de configuração:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Criando as pastas de projetos e virtualenv&lt;/span&gt;
+$ mkdir -p ~/Projetos ~/Virtualenvs 
+
+&lt;span class="c1"&gt;# Criando a pasta de configuração do pip no Mac OS&lt;/span&gt;
+$ mkdir ~/Library/Application&lt;span class="se"&gt;\ &lt;/span&gt;Support/pip
+
+&lt;span class="c1"&gt;# Criando a pasta de configuração do pip no Linux&lt;/span&gt;
+$ mkdir ~/.config/pip
+
+&lt;span class="c1"&gt;# Criando o arquivo no Mac OS&lt;/span&gt;
+$ vim ~/Library/Application&lt;span class="se"&gt;\ &lt;/span&gt;Support/pip/pip.conf
+
+&lt;span class="c1"&gt;# Criando o arquivo de configuração no Linux&lt;/span&gt;
+$ vim ~/.config/pip/pip.conf
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Dentro do arquivo de configuração que você abriu utilizando o &lt;code&gt;vim&lt;/code&gt;, você irá incluir as seguintes linhas:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;install&lt;span class="o"&gt;]&lt;/span&gt;
+require-virtualenv &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;true&lt;/span&gt;
+
+&lt;span class="o"&gt;[&lt;/span&gt;uninstall&lt;span class="o"&gt;]&lt;/span&gt;
+require-virtualenv &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;true&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Você pode salvar e fechar o arquivo (&lt;code&gt;[esc] + :wq + [Enter]&lt;/code&gt;), e estas configurações já estarão sendo obedecidas.&lt;/p&gt;
+&lt;h3 id="Criando-virtualenvs"&gt;Criando virtualenvs&lt;a class="anchor-link" href="#Criando-virtualenvs"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Para criar um ambiente virtual você simplesmente executa o comando&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ virtualenv nome-do-ambiente
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;porém, caso você tenha tanto o python 2.x quanto o python 3.x na sua máquina, é preciso alterar o comando para criar um ambiente em python 3.x:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ virtualenv -p python3 nome-do-ambiente
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id="Criando-o-alias-globalpip"&gt;Criando o alias globalpip&lt;a class="anchor-link" href="#Criando-o-alias-globalpip"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Para criar o globalpip e ser feliz com a possibilidade de instalar e atualizar pacotes sem estar em um ambiente virtual nós vamos editar o arquivo &lt;code&gt;.bashrc&lt;/code&gt;. É só copiar o código e colar no fim do arquivo.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;globalpip&lt;span class="o"&gt;(){&lt;/span&gt;
+   &lt;span class="nv"&gt;PIP_REQUIRE_VIRTUALENV&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;""&lt;/span&gt; pip &lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="nv"&gt;$@&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+
+globalpip3&lt;span class="o"&gt;(){&lt;/span&gt;
+   &lt;span class="nv"&gt;PIP_REQUIRE_VIRTUALENV&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;""&lt;/span&gt; pip3 &lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="nv"&gt;$@&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;E aí você só precisa utilizar o comando assim:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ globalpip3 install --upgrade pip setuptools wheel virtualenv
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id="Ativando-e-desativando-ambientes"&gt;Ativando e desativando ambientes&lt;a class="anchor-link" href="#Ativando-e-desativando-ambientes"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Para ativar um determinado ambiente você precisa executar:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ &lt;span class="nb"&gt;source&lt;/span&gt; ~/Virtualenvs/nome-do-ambiente/bin/activate
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;E para desativar:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ deactivate
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h2 id="Bônus:-autoenv"&gt;Bônus: autoenv&lt;a class="anchor-link" href="#Bônus:-autoenv"&gt;¶&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;O autoenv ativa automaticamente um ambiente virtual sempre que você entra (comando &lt;code&gt;cd&lt;/code&gt;) em um diretório que contém um arquivo oculto &lt;code&gt;.env&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para instalá-lo no Linux:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git clone git://github.com/kennethreitz/autoenv.git ~/.autoenv
+$ &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s1"&gt;'source ~/.autoenv/activate.sh'&lt;/span&gt; &gt;&gt; ~/.bashrc
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Para instalá-lo no Mac OS X:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ brew install autoenv
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;E é isso aí gente! Esse artigo é praticamente uma compilação &lt;a href="http://docs.python-guide.org/en/latest/starting/install3/osx/"&gt;desse&lt;/a&gt;, &lt;a href="http://docs.python-guide.org/en/latest/dev/virtualenvs/#virtualenvironments-ref"&gt;desse&lt;/a&gt; e &lt;a href="https://hackercodex.com/guide/python-development-environment-on-mac-osx/"&gt;desse&lt;/a&gt; artigo, e de mais 80 perguntas no stackoverflow, asklinux e python.org.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Obs.1&lt;/strong&gt;: Caso algo não tenha funcionado é só comentar aí que eu tento te ajudar o mais rápido possível!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Obs.2&lt;/strong&gt;: Se você achou algum erro, comenta aí que eu corrijo ASAP 👍🏽&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Obs.3&lt;/strong&gt;: Se você gostou, let me know, e comente algo que você queira ver aqui, farei o possível pra escrever sobre o que for do interesse de todos 😊&lt;/p&gt;
+&lt;p&gt;Tchau, migos!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
     var mathjaxscript = document.createElement('script');
     mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
     mathjaxscript.type = 'text/javascript';
@@ -1078,19 +1207,5 @@ h6:hover .anchor-link {
         "}); ";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-</script>
-
-	<div id="disqus_thread"></div>
-		<script type="text/javascript">
-			var disqus_shortname = 'izabelacborges-com-blog';
-			(function() {
-	 			var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-	 			dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-	 			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-	 		})();
-		</script>
-	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-</div>
-		</div>
-	</body>
-</html>
+&lt;/script&gt;
+</content><category term="python"></category><category term="instalacao"></category></entry></feed>
